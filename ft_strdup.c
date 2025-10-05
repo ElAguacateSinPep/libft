@@ -6,7 +6,7 @@
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:39:27 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/05 16:41:06 by amunoz-o         ###   ########.fr       */
+/*   Updated: 2025/10/05 16:42:28 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,3 @@ char	*ft_strdup(const char *s1)
 	cpy[i] = '\0';
 	return (cpy);
 }
- 
