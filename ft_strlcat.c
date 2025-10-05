@@ -6,13 +6,13 @@
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 14:06:05 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/04 21:10:10 by amunoz-o         ###   ########.fr       */
+/*   Updated: 2025/10/05 03:08:56 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcat(char *dst, const char *src, size_t max)
+size_t	ft_strlcat(char *dst, const char *src, size_t max)
 {
 	size_t	lendst;
 	size_t	j;
