@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/05 17:05:40 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/06 01:49:45 by amunoz-o         ###   ########.fr       */
+/*   Created: 2025/10/12 13:43:00 by amunoz-o          #+#    #+#             */
+/*   Updated: 2025/10/12 13:54:44 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	len;
+	t_list	*list_ptr;
 
-	if (!s1 || !set)
-		return (0);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	len = ft_strlen(s1);
-	while (ft_strrchr(set, s1[len]) && len)
-		len--;
-	return (ft_substr(s1, 0, len + 1));
+	if (!lst)
+		return ;
+	list_ptr = lst;
+	while (list_ptr != NULL)
+	{
+		(*f)(list_ptr->content);
+		list_ptr = list_ptr->next;
+	}
 }
