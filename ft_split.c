@@ -69,10 +69,10 @@ static	char	**write_result(char const *s, char c, char	**res)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
+//	size_t	i;
 	char	**res;
 
-	i = 0;
+//	i = 0;
 	if (!s)
 		return (0);
 	res = malloc(sizeof(char *) * (count_words(s, c) + 1));
