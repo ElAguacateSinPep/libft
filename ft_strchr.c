@@ -6,7 +6,7 @@
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 21:12:43 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/05 03:09:01 by amunoz-o         ###   ########.fr       */
+/*   Updated: 2025/10/15 12:51:00 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	unsigned char	d;
+
+	d = (unsigned char)c;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == d)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if (d == '\0')
 		return ((char *)s);
 	return (NULL);
 }
