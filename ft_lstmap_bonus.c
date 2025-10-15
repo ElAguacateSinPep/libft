@@ -6,7 +6,7 @@
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 13:49:50 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/12 13:50:33 by amunoz-o         ###   ########.fr       */
+/*   Updated: 2025/10/15 14:45:01 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		node = ft_lstnew(f(lst->content));
 		if (!node)
 		{
-			ft_lstclear(&node, (*del));
+			ft_lstclear(&new, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new, node);

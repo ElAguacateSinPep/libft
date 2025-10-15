@@ -59,7 +59,7 @@ $(NAME): $(OBJ)
 	@echo "$(NAME) created"
 
 %.o: %.c
-	gcc $(FLAG) -c $< -o $@
+	cc $(FLAG) -c $< -o $@
 
 clean:
 	rm -f $(OBJ) $(BONUS_OBJ)
