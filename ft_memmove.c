@@ -6,7 +6,7 @@
 /*   By: amunoz-o <amunoz-o@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 15:37:28 by amunoz-o          #+#    #+#             */
-/*   Updated: 2025/10/05 03:09:04 by amunoz-o         ###   ########.fr       */
+/*   Updated: 2025/10/15 12:04:21 by amunoz-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
+	i = 0;
 	if ((dst == NULL) && (src == NULL))
 		return (NULL);
 	if (d < s)
